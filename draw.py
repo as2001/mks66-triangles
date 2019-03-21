@@ -30,6 +30,7 @@ def add_box( polygons, x, y, z, width, height, depth ):
     z1 = z - depth
 
     #front
+    add_polygon(
     add_edge(polygons, x, y, z, x1, y, z)
     add_edge(polygons, x, y1, z, x1, y1, z)
     add_edge(polygons, x1, y, z, x1, y1, z)
